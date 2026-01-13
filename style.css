@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f2edff, #eefbf7);
+}
+
+/* TOP BAR */
+.top-bar {
+  background: linear-gradient(90deg, #7a5cff, #9fded3);
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 270px;
+  background: #f9f6ff;
+  padding: 20px;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.sidebar li:hover,
+.sidebar .active {
+  background: #e3d9ff;
+}
+
+.how-it-works,
+.about-us {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.helpline-btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 10px;
+  background: #7a5cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.helpline {
+  display: none;
+  margin-top: 10px;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 25px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 230px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.investments {
+  display: flex;
+  gap: 30px;
+}
+
+.invest-box {
+  background: white;
+  padding: 25px;
+  width: 260px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.invest-box:hover {
+  transform: translateY(-10px);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.purple { background: #7a5cff; }
+.teal { background: #46c3b1; }
+
+input, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+button {
+  background: linear-gradient(90deg, #7a5cff, #46c3b1);
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* BENEFITS */
+.benefits ul {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.benefits li {
+  margin: 8px 0;
+}
+
+/* ANIMATIONS */
+.bounce { animation: bounce 0.7s; }
+.delay { animation-delay: 0.3s; }
+.slide { animation: slideUp 0.8s; }
+
+@keyframes bounce {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* CHATBOT */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 36px;
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.chatbox {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.glow {
+  background: linear-gradient(270deg, #2c2c54, #4b4bb5, #2c2c54);
+  animation: glow 3s infinite;
+}
+
+@keyframes glow {
+  0% { background-position: 0%; }
+  50% { background-position: 100%; }
+  100% { background-position: 0%; }
+}
+
+.chat-header {
+  background: #7a5cff;
+  padding: 10px;
+}
+
+.chat-body {
+  height: 220px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.bot {
+  background: #3f3f7a;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.user {
+  background: #7a5cff;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  text-align: right;
+}
+body {
+  background: linear-gradient(135deg,#f4efff,#e9fff8);
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background: linear-gradient(90deg,#6f4eff,#8fe0d8);
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+}
+.sidebar {
+  width: 280px;
+  background: #f8f5ff;
+  padding: 25px;
+}
+.sidebar li {
+  list-style: none;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.sidebar li:hover,
+.sidebar .active {
+  background: #e6dbff;
+}
+.how-it-works,
+.about-us {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 14px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.helpline-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #6f4eff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.helpline {
+  display: none;
+  margin-top: 12px;
+}
+.main {
+  flex: 1;
+  padding: 30px;
+}
+.cards {
+  display: flex;
+  gap: 25px;
+}
+.card {
+  background: white;
+  padding: 25px;
+  width: 240px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 12px 22px rgba(0,0,0,0.1);
+}
+.investments {
+  display: flex;
+  gap: 35px;
+}
+.invest-box {
+  background: white;
+  padding: 30px;
+  width: 270px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+.invest-box:hover {
+  transform: translateY(-12px);
+}
+.icon-circle {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.purple { background: #6f4eff; }
+.teal { background: #42bfb5; }  
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+}
+button {
+  background: linear-gradient(90deg,#6f4eff,#42bfb5);
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.benefits ul {
+  margin-top: 12px;
+  list-style: none;
+}
+.benefits li {
+  margin: 10px 0;
+}
+.bounce { animation: bounce 0.8s; }
+.delay { animation-delay: 0.4s; }
+.slide { animation: slideUp 0.9s; }
+@keyframes bounce {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.chat-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 38px;
+}
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.chatbox {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  width: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+  color: white;
+}
+.glow {
+  background: linear-gradient(270deg,#2a2a50,#4848b0,#2a2a50);
+  animation: glow 3s infinite;
+}
+@keyframes glow {
+  0% { background-position: 0%; }
+  50% { background-position: 100%; }
+  100% { background-position: 0%; }
+}
+.chat-header {
+  background: #6f4eff;
+  padding: 12px;
+}
+.chat-body {
+  height: 240px;
+  padding: 12px;
+  overflow-y: auto;
+}
+.bot {
+  background: #3c3c78;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.user {
+  background: #6f4eff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  text-align: right;
+}
+/* Make summary cards fill available space */
+.cards {
+  display: flex;
+  gap: 25px;
+  align-items: stretch;
+}
+
+.cards .card {
+  flex: 1;
+  min-width: 220px;
+  width: auto;
+}
+
+/* Make investment option boxes responsive and larger */
+.investments {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.investments .invest-box {
+  flex: 1;
+  min-width: 220px;
+  max-width: 420px;
+  width: auto;
+}
